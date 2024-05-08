@@ -1,15 +1,18 @@
 import React from 'react';
 
-export const metadata = {
-  title: "Rigister Page ",
-  description: "description for Rigister page ",
-}
 
+
+
+export const metadata = {
+  title: 'Register page',
+  description: 'description for Register page',
+
+}
 const Page = () => {
   return (
-  
-      <h1>register page</h1>
-
+    <h1>
+      Register Page
+    </h1>
   );
 }
 

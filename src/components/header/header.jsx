@@ -1,6 +1,5 @@
 import React from "react";
 import "./header.css";
-import { headers } from "next/headers";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBagShopping,
@@ -14,7 +13,7 @@ import Link from "next/link";
 const Header = () => {
   return (
     <header id="headerElement" className="flex">
-      <div className="logo">
+      <Link href={"/"} className="logo">
         <FontAwesomeIcon
           className="fa-solid fa-bag-shopping"
           style={{
@@ -26,7 +25,19 @@ const Header = () => {
 
         <span style={{ fontWeight: "bold" }}>AWU</span>
         <p style={{ letterSpacing: "0.5px" }}>Shopping</p>
-      </div>
+      </Link>
+
+
+ 
+
+
+
+
+
+
+
+
+
       <nav className="links">
         <Link
           style={{ position: "relative" }}
@@ -43,7 +54,12 @@ const Header = () => {
           $0.00
           <span className="products-number">2</span>
         </Link>
-        <Link className="sign-in" href="/signin">
+
+
+
+        <Link 
+        className="sign-in"
+         href="/signin">
           <FontAwesomeIcon
             className="fa-solid fa-right-to-bracket"
             style={{
@@ -53,7 +69,13 @@ const Header = () => {
           />
           Sign in
         </Link>
-        <Link className="register" href="register">
+
+
+
+
+        <Link 
+        className="register" 
+        href="/register">
           <FontAwesomeIcon
             className="fa-solid fa-user-plus"
             style={{
